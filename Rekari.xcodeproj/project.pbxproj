@@ -11,6 +11,7 @@
 		335D3D7E2C1D78F900ED9DEB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335D3D7D2C1D78F900ED9DEB /* ContentView.swift */; };
 		335D3D802C1D78FF00ED9DEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335D3D7F2C1D78FF00ED9DEB /* Assets.xcassets */; };
 		335D3D842C1D78FF00ED9DEB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 335D3D832C1D78FF00ED9DEB /* Preview Assets.xcassets */; };
+		335D3D8D2C1D7D3800ED9DEB /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335D3D8C2C1D7D3800ED9DEB /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		335D3D7F2C1D78FF00ED9DEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		335D3D812C1D78FF00ED9DEB /* Rekari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rekari.entitlements; sourceTree = "<group>"; };
 		335D3D832C1D78FF00ED9DEB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		335D3D8C2C1D7D3800ED9DEB /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			children = (
 				335D3D7A2C1D78F900ED9DEB /* Rekari */,
 				335D3D792C1D78F900ED9DEB /* Products */,
+				335D3D8E2C1D7DCC00ED9DEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +57,7 @@
 			children = (
 				335D3D7B2C1D78F900ED9DEB /* RekariApp.swift */,
 				335D3D7D2C1D78F900ED9DEB /* ContentView.swift */,
+				335D3D8C2C1D7D3800ED9DEB /* WebView.swift */,
 				335D3D7F2C1D78FF00ED9DEB /* Assets.xcassets */,
 				335D3D812C1D78FF00ED9DEB /* Rekari.entitlements */,
 				335D3D822C1D78FF00ED9DEB /* Preview Content */,
@@ -67,6 +71,13 @@
 				335D3D832C1D78FF00ED9DEB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		335D3D8E2C1D7DCC00ED9DEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				335D3D8D2C1D7D3800ED9DEB /* WebView.swift in Sources */,
 				335D3D7E2C1D78F900ED9DEB /* ContentView.swift in Sources */,
 				335D3D7C2C1D78F900ED9DEB /* RekariApp.swift in Sources */,
 			);
@@ -261,12 +273,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Rekari/Rekari.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Rekari/Preview Content\"";
+				DEVELOPMENT_TEAM = A564426QZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MacNicoPlayer（Re:仮）";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -280,8 +297,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.smilemac.MacNicoPlayer.Rekari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -297,12 +314,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_ENTITLEMENTS = Rekari/Rekari.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Rekari/Preview Content\"";
+				DEVELOPMENT_TEAM = A564426QZX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MacNicoPlayer（Re:仮）";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -316,8 +338,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.7;
-				MARKETING_VERSION = 1.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 3.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.smilemac.MacNicoPlayer.Rekari;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
