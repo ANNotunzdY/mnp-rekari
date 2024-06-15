@@ -39,7 +39,16 @@ struct WebView: NSViewRepresentable {
          init(_ parent: WebView) {
              self.parent = parent
          }
-         
+        
+        func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+            if navigationAction.targetFrame == nil {
+                if let url = navigationAction.request.url {
+                    NSWorkspace.shared.open(url)
+                }
+            }
+            return nil
+        }
+        
          func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
              DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                  let script = """
