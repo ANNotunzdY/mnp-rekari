@@ -10,7 +10,7 @@
 macOS 12.0以降
 
 ## ダウンロード
-https://github.com/ANNotunzdY/mnp-rekari/releases/tag/3.0
+https://github.com/ANNotunzdY/mnp-rekari/releases/
 
 ## インストール
 未署名のため、以下の手順で開いてください  
